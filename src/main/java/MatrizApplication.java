@@ -1,18 +1,19 @@
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class MatrizApplication {
 
     public static void main(String[] args) {
-
+        
         List<Integer[]> matrix = new ArrayList<>();
         matrix.add(new Integer[]{1, 0, 1, 0, 0});
         matrix.add(new Integer[]{1, 0, 1, 1, 1});
         matrix.add(new Integer[]{1, 1, 1, 1, 1});
         matrix.add(new Integer[]{1, 0, 0, 1, 0});
         Integer maiorArea = maiorArea(matrix);
-        System.out.println(maiorArea);
+        System.out.println("O retângulo de maior área possui área de: " + maiorArea);
 
     }
 
